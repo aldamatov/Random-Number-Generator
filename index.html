@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+
+    <style>
+        .wrapper {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: auto;
+            width:  350px;
+            background-color: rgb(40, 191, 218);
+            padding: 20px 30px;
+            margin-top: 150px;
+            text-align: center;
+            border-radius: 30px;
+        }
+        .wrapper h2{
+            text-align: left;
+            font-weight: 600;
+        }
+        lable, input{
+            margin: 10px;
+            height: 30px;
+
+        }
+        #generateBtn{
+            color: white;
+            background-color: red;
+            padding: 10px 20px;
+            padding: 10px 20px;
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 30px;
+            font-size: 1rem;
+        }
+        #generateBtn:hover{
+            background: #000;
+        }
+        #clearBtn{
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 30px;
+            font-size: 1rem;
+        }
+        #clearBtn:hover{
+            background-color: blueviolet;
+            color: white;
+        }
+       
+    </style>
+
+
+
+</head>
+<body>
+
+
+
+    <div class="wrapper">
+        <h2>Your Random number is: <span></span></h2>
+
+        <!-- Lover Limit -->
+        <div>
+        <label for=""> Lower Limit</label>
+        <input type="text" id="lower" placeholder="Enter Lower Limit">
+        </div>
+        
+        <!-- Upper Limit -->
+        <div>
+        <label for=""> Upper Limit</label>
+        <input type="text" id="upper" placeholder="Enter Upper Limit">
+        </div>
+        
+        <!-- Buttons -->
+        <div>
+        <button type="submit" id="generateBtn">Generate</button>
+        <button type="reset" id="clearBtn">Clear</button>
+        </div>
+
+
+    </div>
+    <script src="/app.js"></script>
+</body>
+</html>
